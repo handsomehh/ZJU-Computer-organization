@@ -93,11 +93,12 @@ module DataPath_2022(
         .o(o0)
     );*/
     
-    add_32 add_32_0(
+    /*add_32 add_32_0(
         .a(Q),
         .b(32'b100),
         .c(c0)
-    );
+    );*/
+    assign c0 = Q + 32'b100;
     add_32 add_32_1(
         .a(Q),
         .b(Imm_out),
@@ -107,10 +108,10 @@ module DataPath_2022(
         .A(Rs1_data),
         .B(o3),
         .ALU_operation(ALU_operation),
-        .res(ALU_res),
+        .res(ALU_out),
         .zero(zero)
     );
-    assign o0 = ((Branch&&zero)||(BranchN&&zero))?c1:c0;
+    assign o0 = ((Branch&&zero)||(BranchN&&(~zero)))?c1:c0;
    /* MUX4T1_32 MUX4T1_32_0(
         .I0(ALU_res),
         .I1(Data_in),
@@ -119,7 +120,7 @@ module DataPath_2022(
         .s(MemtoReg),
         .o(o1)
     );*/
-    assign o1 = (MemtoReg==2'b00)?ALU_res:(MemtoReg==2'b01)?Data_in:(MemtoReg==2'b10)?c0:Imm_out;
+    assign o1 = (MemtoReg==2'b00)?ALU_out:(MemtoReg==2'b01)?Data_in:(MemtoReg==2'b10)?c0:Imm_out;
      /*MUX4T1_32 MUX2T1_32_3(
         .I0(o0),
         .I1(c1),
@@ -128,7 +129,7 @@ module DataPath_2022(
         .s(Jump),
         .o(o2)
     );*/
-    assign o2 = (Jump==2'b00)?o0:(Jump==2'b01)?c1:(Jump==2'b10)?ALU_res:ALU_res;
+    assign o2 = (Jump==2'b00)?o0:(Jump==2'b01)?c1:(Jump==2'b10)?ALU_out:ALU_out;
     /*MUX2T1_32 MUX2T1_32_0(
         .I0(Rs2_data),
         .I1(Imm_out),

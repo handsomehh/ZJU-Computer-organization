@@ -279,7 +279,7 @@ VGA U11(
     .vga_r(Red),
     .vga_g(Green),
     .vga_b(Blue),
-    .inst_field(spo),
+    
     .imm(imm),
     .reg_val_1(reg_val_1),
     .reg_val_2(reg_val_2),
@@ -312,7 +312,7 @@ VGA U11(
     .reg_val_29(reg_val_29),
     .reg_val_30(reg_val_30),
     .reg_val_31(reg_val_31),
-     .Wt_data(Wt_data),
+    .Wt_data(Wt_data),
      .Rs_data1(Rs_data1),
      .Rs_data2(Rs_data2),
      .b_val(b_val),

@@ -65,13 +65,8 @@ wire [1:0] ALU_op_i=2'b11;
         ALUSrc_B = Rop|Bop? 0:1;
         MemtoReg = Rop|Iop? 2'b00:
                    Lop? 2'b01:
-                   Uop? 2'b11:
                    2'b10;
-        if(Uop|Rop)RegWrite=1;
-        else if(Iop|Lop)RegWrite=1;
-        else if(Jop)RegWrite=1;
-        else RegWrite=0;
-        //RegWrite = Uop|Rop|Iop|Lop|Jop? 1:0;//Rop|Iop|Lop|Jop
+        RegWrite = Rop|Iop|Lop|Jop? 1:0;
         MemRW = Sop? 1:0;
         ALU_op = Rop ? ALU_op_r:
                  Iop ? ALU_op_i:
