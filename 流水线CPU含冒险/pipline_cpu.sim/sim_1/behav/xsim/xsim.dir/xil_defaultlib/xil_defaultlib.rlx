@@ -1,0 +1,22 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sim_1/new/Pipline_cpu_test.v,1654190589,verilog,,,,Pipline_cpu_test,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v,1653621128,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v,,ALU,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/Single_CPU_base/SCPU_4921.v,1654187586,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Ex_reg_Mem.v,,SCPU_4921,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/ImmGen.v,1653317964,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/PC.v,,ImmGen,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/PC.v,1652182959,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v,,PC,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v,1654477303,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/Single_CPU_base/SCPU_4921.v,,RegFile,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/pipline_cpu/stall.v,1654188803,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sim_1/new/Pipline_cpu_test.v,,stall,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v,1654000325,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/ImmGen.v,,IP2CPU_pipcpu,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Ex_reg_Mem.v,1653617539,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_ID_reg_Ex.v,,my_EX_reg_MEM,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_ID_reg_Ex.v,1654000531,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_IF_reg_ID.v,,my_ID_reg_Ex,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_IF_reg_ID.v,1654000589,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Mem_reg_WB.v,,my_IF_reg_ID,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Mem_reg_WB.v,1653620635,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_ID.v,,my_Mem_reg_WB,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_ID.v,1654187598,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_IF.v,,my_PIP_ID,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_IF.v,1653310164,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_Ex.v,,my_PIP_IF,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_Ex.v,1653319184,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_WB.v,,my_pip_Ex,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_WB.v,1653289387,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pipline_Mem.v,,my_pip_WB,,,,,,,,
+D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pipline_Mem.v,1653289123,verilog,,D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/pipline_cpu/stall.v,,my_pipline_Mem,,,,,,,,

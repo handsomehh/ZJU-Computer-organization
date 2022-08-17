@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun  6 08:42:21 2022
+# Process ID: 21884
+# Current directory: D:/VivadoProject/pipline_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6844 D:\VivadoProject\pipline_cpu\pipline_cpu.xpr
+# Log file: D:/VivadoProject/pipline_cpu/vivado.log
+# Journal file: D:/VivadoProject/pipline_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoProject/pipline_cpu/pipline_cpu.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+launch_simulation
+launch_simulation
+launch_simulation
+source Pipline_cpu_test.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+close_sim
+launch_simulation
+source Pipline_cpu_test.tcl
+set_property -dict [list CONFIG.coefficient_file {D:/VivadoProject/h.coe}] [get_ips ROM_D]
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+close_sim

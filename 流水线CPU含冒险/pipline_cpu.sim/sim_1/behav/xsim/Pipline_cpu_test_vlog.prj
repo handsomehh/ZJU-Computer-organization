@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v" \
+"../../../../pipline_cpu.srcs/sources_1/imports/CPU_interpert/ImmGen.v" \
+"../../../../pipline_cpu.srcs/sources_1/imports/CPU_interpert/PC.v" \
+"../../../../pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v" \
+"../../../../pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/Single_CPU_base/SCPU_4921.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_Ex_reg_Mem.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_ID_reg_Ex.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_IF_reg_ID.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_Mem_reg_WB.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_PIP_ID.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_PIP_IF.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_pip_Ex.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_pip_WB.v" \
+"../../../../pipline_cpu.srcs/sources_1/new/my_pipline_Mem.v" \
+"../../../../pipline_cpu.srcs/sources_1/imports/pipline_cpu/stall.v" \
+"../../../../pipline_cpu.srcs/sim_1/new/Pipline_cpu_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

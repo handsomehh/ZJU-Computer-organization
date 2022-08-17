@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun  7 18:02:25 2022
+# Process ID: 71564
+# Current directory: C:/Users/º«âıÈÙ/Desktop/asd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent52368 C:\Users\º«âıÈÙ\Desktop\asd\pipline_cpu.xpr
+# Log file: C:/Users/º«âıÈÙ/Desktop/asd/vivado.log
+# Journal file: C:/Users/º«âıÈÙ/Desktop/asd\vivado.jou
+#-----------------------------------------------------------start_gui
+oopen_project C:/Users/º«âıÈÙ/Desktop/asd/pipline_cpu.xpruopen_hw
+update_compile_order -fileset sources_1
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6

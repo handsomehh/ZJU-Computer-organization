@@ -1,0 +1,30 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado01/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 75d08abdd03d42aea8cd43121f9b8d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Pipline_cpu_test_behav xil_defaultlib.Pipline_cpu_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'Rd_addr_out_ID' [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v:142]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'Jump' [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_ID.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.my_PIP_IF
+Compiling module xil_defaultlib.my_IF_reg_ID
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.SCPU_4921
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.my_PIP_ID
+Compiling module xil_defaultlib.my_ID_reg_Ex
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.my_pip_Ex
+Compiling module xil_defaultlib.my_EX_reg_MEM
+Compiling module xil_defaultlib.my_pipline_Mem
+Compiling module xil_defaultlib.my_Mem_reg_WB
+Compiling module xil_defaultlib.my_pip_WB
+Compiling module xil_defaultlib.stall
+Compiling module xil_defaultlib.IP2CPU_pipcpu
+Compiling module xil_defaultlib.Pipline_cpu_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipline_cpu_test_behav

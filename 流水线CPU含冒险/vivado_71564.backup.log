@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun  7 18:02:25 2022
+# Process ID: 71564
+# Current directory: C:/Users/º«âýÈÙ/Desktop/asd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent52368 C:\Users\º«âýÈÙ\Desktop\asd\pipline_cpu.xpr
+# Log file: C:/Users/º«âýÈÙ/Desktop/asd/vivado.log
+# Journal file: C:/Users/º«âýÈÙ/Desktop/asd\vivado.jou
+#-----------------------------------------------------------start_gui
+oopen_project C:/Users/º«âýÈÙ/Desktop/asd/pipline_cpu.xprIINFO: [Project 1-313] Project file moved from 'D:/VivadoProject/pipline_cpu' since last save.WWARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/OExp05-Pipeline_CPU/h.coe'; using path 'D:/OExp05-Pipeline_CPU/h.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/OExp05-Pipeline_CPU/P.coe'; using path 'D:/OExp05-Pipeline_CPU/P.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/Desktop/h.coe'; using path 'D:/VivadoProject/h.coe' instead.
+Scanning sources...FFinished scanning sourcesWWARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/OExp05-Pipeline_CPU/h.coe'; using path 'D:/OExp05-Pipeline_CPU/h.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/OExp05-Pipeline_CPU/P.coe'; using path 'D:/OExp05-Pipeline_CPU/P.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/Desktop/h.coe'; using path 'D:/VivadoProject/h.coe' instead.WWARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/OExp05-Pipeline_CPU/h.coe'; using path 'D:/OExp05-Pipeline_CPU/h.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/OExp05-Pipeline_CPU/P.coe'; using path 'D:/OExp05-Pipeline_CPU/P.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/º«âýÈÙ/Desktop/h.coe'; using path 'D:/VivadoProject/h.coe' instead.IINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedIINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado01/Vivado/2018.3/data/ip'.oopen_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 777.422 ; gain = 190.785uopen_hw
+update_compile_order -fileset sexit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  7 18:03:59 2022...
+
+ountered:
+1. Failed to delete one or more files in run directory C:/Users/º«âýÈÙ/Desktop/asd/pipline_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'd:/Vivado01/Vivado/2018.3/data/ip/xilinx/dist_mem_gen_v8_0/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'ROM_D'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'ROM_D'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  7 18:03:55 2022...

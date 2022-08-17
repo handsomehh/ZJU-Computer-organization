@@ -1,0 +1,838 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun  6 08:42:21 2022
+# Process ID: 21884
+# Current directory: D:/VivadoProject/pipline_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6844 D:\VivadoProject\pipline_cpu\pipline_cpu.xpr
+# Log file: D:/VivadoProject/pipline_cpu/vivado.log
+# Journal file: D:/VivadoProject/pipline_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoProject/pipline_cpu/pipline_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado01/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 797.535 ; gain = 177.688
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1817.594 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/OExp05-Pipeline_CPU/h.coe' provided. It will be converted relative to IP Instance files '../../../../../../OExp05-Pipeline_CPU/h.coe'
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 08:45:11 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1/runme.log
+[Mon Jun  6 08:45:11 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1882.969 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado01/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipline_cpu_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/h.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/I_int.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipline_cpu_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IP2CPU_pipcpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs1_data' is not permitted [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v:64]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs2_data' is not permitted [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v:65]
+ERROR: [VRFC 10-2865] module 'RegFile' ignored due to previous errors [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado01/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipline_cpu_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/h.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/I_int.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipline_cpu_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IP2CPU_pipcpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs1_data' is not permitted [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v:64]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs2_data' is not permitted [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v:65]
+ERROR: [VRFC 10-2865] module 'RegFile' ignored due to previous errors [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado01/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipline_cpu_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/h.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/I_int.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipline_cpu_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IP2CPU_pipcpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/Single_CPU_base/SCPU_4921.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU_4921
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_EX_reg_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_PIP_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_PIP_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_pip_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_pip_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pipline_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_pipline_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/pipline_cpu/stall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stall
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sim_1/new/Pipline_cpu_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipline_cpu_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado01/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 75d08abdd03d42aea8cd43121f9b8d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Pipline_cpu_test_behav xil_defaultlib.Pipline_cpu_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'Rd_addr_out_ID' [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v:142]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'Jump' [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_ID.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.my_PIP_IF
+Compiling module xil_defaultlib.my_IF_reg_ID
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.SCPU_4921
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.my_PIP_ID
+Compiling module xil_defaultlib.my_ID_reg_Ex
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.my_pip_Ex
+Compiling module xil_defaultlib.my_EX_reg_MEM
+Compiling module xil_defaultlib.my_pipline_Mem
+Compiling module xil_defaultlib.my_Mem_reg_WB
+Compiling module xil_defaultlib.my_pip_WB
+Compiling module xil_defaultlib.stall
+Compiling module xil_defaultlib.IP2CPU_pipcpu
+Compiling module xil_defaultlib.Pipline_cpu_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipline_cpu_test_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/xsim.dir/Pipline_cpu_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun  6 09:01:55 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1926.250 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Pipline_cpu_test_behav -key {Behavioral:sim_1:Functional:Pipline_cpu_test} -tclbatch {Pipline_cpu_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Pipline_cpu_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1959.055 ; gain = 32.805
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Pipline_cpu_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1959.055 ; gain = 32.805
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 09:02:06 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1/runme.log
+[Mon Jun  6 09:02:06 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1969.074 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 09:31:07 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1980.133 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 09:36:07 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2032.156 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/OExp05-Pipeline_CPU/h.coe' provided. It will be converted relative to IP Instance files '../../../../../../OExp05-Pipeline_CPU/h.coe'
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 09:40:36 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1/runme.log
+[Mon Jun  6 09:40:36 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2125.156 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/OExp05-Pipeline_CPU/h.coe' provided. It will be converted relative to IP Instance files '../../../../../../OExp05-Pipeline_CPU/h.coe'
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 09:50:01 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1/runme.log
+[Mon Jun  6 09:50:01 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.008 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.008 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado01/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipline_cpu_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/h.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/I_int.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/ROM_D.mif'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim/P.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipline_cpu_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/IP_base/ALU.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IP2CPU_pipcpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/CPU_interpert/IP/Single_CPU_base/SCPU_4921.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU_4921
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_EX_reg_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_PIP_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_PIP_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_pip_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pip_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_pip_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_pipline_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_pipline_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/imports/pipline_cpu/stall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stall
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sim_1/new/Pipline_cpu_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipline_cpu_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado01/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 75d08abdd03d42aea8cd43121f9b8d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Pipline_cpu_test_behav xil_defaultlib.Pipline_cpu_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'Rd_addr_out_ID' [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/IP2CPU_pipcpu.v:142]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'Jump' [D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/new/my_PIP_ID.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.my_PIP_IF
+Compiling module xil_defaultlib.my_IF_reg_ID
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.SCPU_4921
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.my_PIP_ID
+Compiling module xil_defaultlib.my_ID_reg_Ex
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.my_pip_Ex
+Compiling module xil_defaultlib.my_EX_reg_MEM
+Compiling module xil_defaultlib.my_pipline_Mem
+Compiling module xil_defaultlib.my_Mem_reg_WB
+Compiling module xil_defaultlib.my_pip_WB
+Compiling module xil_defaultlib.stall
+Compiling module xil_defaultlib.IP2CPU_pipcpu
+Compiling module xil_defaultlib.Pipline_cpu_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipline_cpu_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VivadoProject/pipline_cpu/pipline_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Pipline_cpu_test_behav -key {Behavioral:sim_1:Functional:Pipline_cpu_test} -tclbatch {Pipline_cpu_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Pipline_cpu_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2202.008 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Pipline_cpu_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2202.008 ; gain = 0.000
+set_property -dict [list CONFIG.coefficient_file {D:/VivadoProject/h.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/VivadoProject/h.coe' provided. It will be converted relative to IP Instance files '../../../../../h.coe'
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 10:39:45 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1/runme.log
+[Mon Jun  6 10:39:45 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.008 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+INFO: [Labtools 27-1435] Device xc7k160t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.008 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+ERROR: [Labtools 27-1951] This software does not support this IBERT version 2.00.  Please use IBERT version 3.00 or later.
+INFO: [Labtools 27-2302] Device xc7k160t (JTAG device index = 0) is programmed with a design that has 1 IBERT core(s).
+ERROR: [Common 17-39] 'refresh_hw_device' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.008 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2202.008 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2202.008 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2202.008 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
+close_hw
+close_hw: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2602.406 ; gain = 400.398
+set_property -dict [list CONFIG.coefficient_file {D:/OExp05-Pipeline_CPU/h.coe}] [get_ips ROM_D]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/OExp05-Pipeline_CPU/h.coe' provided. It will be converted relative to IP Instance files '../../../../../../OExp05-Pipeline_CPU/h.coe'
+generate_target all [get_files  D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_D'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_D'...
+export_ip_user_files -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/VivadoProject/pipline_cpu/pipline_cpu.srcs/sources_1/ip/ROM_D/ROM_D.xci] -directory D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files -ipstatic_source_dir D:/VivadoProject/pipline_cpu/pipline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/questa} {riviera=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/pipline_cpu/pipline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Jun  6 10:50:42 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/synth_1/runme.log
+[Mon Jun  6 10:50:42 2022] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/VivadoProject/pipline_cpu/pipline_cpu.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.070 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-HS2-201706300081" may be locked by another hw_server.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2607.070 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  6 11:59:00 2022...

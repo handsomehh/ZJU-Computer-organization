@@ -1,0 +1,1 @@
+-wto "75d08abdd03d42aea8cd43121f9b8d04" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "Pipline_cpu_test_behav" "xil_defaultlib.Pipline_cpu_test" "xil_defaultlib.glbl" -log "elaborate.log" 

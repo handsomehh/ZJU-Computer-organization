@@ -1,0 +1,1 @@
+c_0.txt/c_1.txt/t_0.txt/t_1.txt分别对应Cache的Data部分和TAG部分的初始化，将他们放在D盘根目录下即可
